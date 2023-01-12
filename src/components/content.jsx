@@ -1,6 +1,5 @@
 import "../css/content.scss"
-import { getRecipes } from "../actions/RecipesActions"
-import React, { useState, useContext, useEffect } from "react";
+import React, { useState } from "react";
 import { get as _get } from "lodash";
 //icons
 import star from '../assets/icons/ic_star.svg';
@@ -9,10 +8,7 @@ import time from '../assets/icons/ic_time.svg';
 import portion from '../assets/icons/ic_portion.svg';
 import chef from '../assets/icons/ic_chef.svg'
 //media
-import muchim1 from '../assets/Ojingeo-muchim.png';
-import muchim5 from '../assets/Ojingeo-muchim-1.png';
 import muchim from '../assets/Ojingeo-muchim-5.png';
-import cherry from '../assets/cherry.png';
 //context
 import { ContextData } from '../Context'
 

@@ -1,0 +1,211 @@
+.textContent {
+    letter-spacing: 0px;
+    color: #D84A4A;
+    font-size: 65px;
+    font-family: "Monster-Clubhouse";
+    font-weight: normal;
+    margin: 0;
+    padding: 0;
+    margin-left: 4%;
+    margin-top: 10px;
+}
+
+.middle {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.contCarrusel {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    width: 100%;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-bottom: 10vh;
+}
+
+.carrusel {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 15px;
+    margin-top: 0px;
+    width: 95vw;
+    align-items: flex-start;
+}
+
+.middleTitle {
+    text-align : left;
+    letter-spacing: 0px;
+    color : #D84A4A;
+    opacity: 1;
+}
+
+.card {
+    opacity: 1;
+    position: relative;
+    box-shadow: 10px 10px 20px -5px #cccccc;
+    border-radius: 15px;
+    transition: 0.2s ease-in;
+    list-style: none;
+    background: transparent linear-gradient(180deg, #E9F1FA 0%, #FFFFFF 100%);
+    padding: 10px;
+    min-height: 250px;
+    min-width: 266px;
+    max-width: 266px;
+    margin-top: 45px;
+}
+
+.containerImage {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.containerImage > img {
+    width: 145px;
+    height: 140px;
+    margin-top: -55px;
+    border-radius: 50%;
+}
+
+.nameFood {
+    display: flex;
+    justify-content: center;
+    gap: 7px;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10%;
+    letter-spacing: -0.6px;
+    color: #D84A4A;
+    font-family: "Poppins";
+}
+
+.foodDesc {
+    font-family: "Monster-Clubhouse";
+    color: #D84A4A;
+    font-size: 20px;
+    padding: 0;
+    margin: 0; 
+}
+
+.containerScore {
+    width: 95%;
+    position: absolute;
+    bottom: 10px;
+}
+
+.score {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0px 10px;
+}
+
+.contentStar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.contentStar > span {
+    font-size: 15px;
+    font-family: "Poppins";
+    color: #425966;
+}
+
+.primaryInfo {
+    display: block;
+}
+
+#hover {
+    display: none;  
+    transition: display 2s ease-out 100ms;
+}
+
+.card:hover #primaryInfo {
+	transition: 0.8s ease;
+    display: none;
+  }
+  
+.card:hover #hover {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+	transition: 2s ease;
+    height: 200px;
+	transition: 0.8s ease;
+}
+
+.hoverTarjet, .descriptionHover {
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.descriptionHover > img {
+    width: 17px;
+    height: 17px;
+}
+
+.titleHover {
+    text-align: center;
+    font-family: "Monster-Clubhouse";
+    letter-spacing: 0px;
+    color: #D84A4A;
+    font-size: 17px;
+}
+
+.textHover {
+    text-align: center;
+    font-family: "Poppins";
+    letter-spacing: 0px;
+    color: #425966;
+    font-size: 14.5px;
+}
+
+
+
+
+@media (max-width: 769px) {
+    .card:hover>#primaryInfo {
+        display: block;
+      }
+      
+    .card:hover>#hover {
+        display: none;
+    }
+    .card:hover {
+        transition: 0 ease;
+    }
+    .contCarrusel {
+        margin-bottom: 8vh;
+    }
+    
+}
+
+@media (max-width: 429px) {
+    .card {
+        min-width: 180px;
+        min-height: 182px;
+    }
+    .carrusel {
+        gap: 10px
+    }
+    .textContent {
+        text-align: center;
+    }
+    .contCarrusel {
+        margin-bottom: 5vh;
+    }
+    .nameFood, .foodDesc {
+        font-size: 15px;
+    }
+
+}
+
